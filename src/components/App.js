@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import AddTodo from './components/AddTodo';
+
+import AddTodo from './AddTodo'
+
 
 const styles = {
 	 fontFamily: 'sans-serif',
@@ -24,9 +26,7 @@ class App extends Component {
 
    render () {
    	  return (
-           <div style={styles}>
-            <AddTodo todo={this.state.todo} handle={this.handleTodo}/>
-           </div>
+          <AddTodo todo={this.state.todo} handleTodo={this.handleTodo}/>
    	  	)
    }
 };
